@@ -361,7 +361,7 @@
 ;(function($, window, document, undefined){
 
     var defaults = {
-        items: '.gs_w',
+        items: '.gs-w',
         distance: 1,
         limit: true,
         offset_left: 0,
@@ -791,7 +791,7 @@
       this.options = $.extend(true, defaults, options);
       this.$el = $(el);
       this.$wrapper = this.$el.parent();
-      this.$widgets = this.$el.children(this.options.widget_selector).addClass('gs_w');
+      this.$widgets = this.$el.children(this.options.widget_selector).addClass('gs-w');
       this.widgets = [];
       this.$changed = $([]);
       this.wrapper_width = this.$wrapper.width();
@@ -878,7 +878,7 @@
                 'data-row': pos.row,
                 'data-sizex' : size_x,
                 'data-sizey' : size_y
-            }).addClass('gs_w').appendTo(this.$el).hide();
+            }).addClass('gs-w').appendTo(this.$el).hide();
 
         this.$widgets = this.$widgets.add($w);
 
